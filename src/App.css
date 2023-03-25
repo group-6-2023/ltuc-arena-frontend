@@ -7,5 +7,21 @@
 }
 
 .app {
-  background-color: rgb(194, 192, 192);
+  background-color: #F2EEE0;
+  margin: 0;
+  padding: 0;
 }
+
+
+::-webkit-scrollbar {
+  width: 15px;
+
+}
+
+::-webkit-scrollbar-track {
+  background: #F2EEE0;
+}
+
+::-webkit-scrollbar-thumb {
+  background:#250303;
+} 
