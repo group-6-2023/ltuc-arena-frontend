@@ -5,3 +5,7 @@
   --lightbluecolor: #0582ca;
   --lightblue1color: #00a6fb;
 }
+
+.app {
+  background-color: rgb(194, 192, 192);
+}
