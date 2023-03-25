@@ -1,18 +1,17 @@
-.nav{
-    background-color: #250303;
+.nav {
+  background-color: #250303;
 }
 
-.navBrand{
-    color: #F2EEE0;
-    margin-right:0%;
+.navBrand {
+  color: #f2eee0;
+  margin-right: 0%;
 }
 
-.navLink{
-    color: #F2EEE0;
+.navLink {
+  color: #f2eee0;
 }
 
-.logo{
-    height: 2.5%;
-    width: 2.5%;
+.logo {
+  height: 2.5%;
+  width: 2.5%;
 }
-

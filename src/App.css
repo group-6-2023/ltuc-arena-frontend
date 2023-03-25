@@ -7,21 +7,23 @@
 }
 
 .app {
-  background-color: #F2EEE0;
+  background-color: #c9c6c5;
   margin: 0;
   padding: 0;
+  font-family: "Edu NSW ACT Foundation", cursive;
 }
-
+p {
+  font-size: larger;
+}
 
 ::-webkit-scrollbar {
   width: 15px;
-
 }
 
 ::-webkit-scrollbar-track {
-  background: #F2EEE0;
+  background: #f2eee0;
 }
 
 ::-webkit-scrollbar-thumb {
-  background:#250303;
-} 
+  background: #777474;
+}

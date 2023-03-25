@@ -5,6 +5,17 @@
 }
 .motvation-container {
   margin-top: 60px;
-  /* box-shadow: 10px 20px 30px rgb(173, 173, 236); */
 
+  box-shadow: 0px -3px 8px 0px #006494;
+  width: 100%;
+
+  padding: 5%;
+}
+.title {
+  color: #006494;
+  padding-bottom: 2%;
+}
+.paragraph1 {
+  padding: 0px 5%;
+  color: #003554;
 }
