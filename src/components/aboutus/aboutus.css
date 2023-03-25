@@ -1,0 +1,14 @@
+.aboutUs-parent {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 60px;
+    box-shadow: 20px 20px 30px blue;
+    margin-top: 60px;
+
+}
+
+.paragraph {
+    padding: 0px 50px;
+}
