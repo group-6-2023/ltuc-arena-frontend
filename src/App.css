@@ -1,24 +1,17 @@
 :root {
   --red: #250303;
-  --page: #F2EEE0;
-  --neon: #C8E6F5;
+  --page: #f2eee0;
+  --neon: #c8e6f5;
   --bigBlue: #417faf;
-  --smallBlue: #5CA0D3;
+  --smallBlue: #5ca0d3;
 }
-
-
 
 .app {
   background-color: #c9c6c5;
   margin: 0;
   padding: 0;
-  font-family: "Edu NSW ACT Foundation", Impact ;
+  font-family: "Edu NSW ACT Foundation", Impact;
   /* font-family:  math ; */
-
-}
-
-p {
-  font-size: 24px;
 }
 
 ::-webkit-scrollbar {
@@ -26,9 +19,9 @@ p {
 }
 
 ::-webkit-scrollbar-track {
-  background: #F2EEE0;
+  background: #f2eee0;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #C8E6F5;
+  background: #c8e6f5;
 }
