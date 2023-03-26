@@ -1,6 +1,6 @@
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Ramyimg from "../../assets/small img/Ramyimg.jpg";
+import Ramyimg from "../../assets/small img/BIgRamy.jpg";
 import "./BigRamy.css";
 
 export default function BigRamy() {
