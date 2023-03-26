@@ -28,11 +28,14 @@ function NavBar() {
 
         {!isAuthenticated ? (
           <Nav className="me-auto navLinkContainer">
-            <Nav.Link href="/" className="navLink">
+            <Nav.Link href="#top" className="navLink">
               Main
             </Nav.Link>
-            <Nav.Link onClick={() => {}} className="navLink">
-              About
+            <Nav.Link href="#AboutUs" className="navLink">
+              About Us
+            </Nav.Link>
+            <Nav.Link href="#OurTeam" className="navLink">
+              Our Team
             </Nav.Link>
           </Nav>
         ) : (

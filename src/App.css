@@ -5,6 +5,9 @@
   --bigBlue: #417faf;
   --smallBlue: #5ca0d3;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .app {
   background-color: #c9c6c5;

@@ -6,24 +6,30 @@ import "./motvationcontant.css";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-
 export default function MotvationContent() {
   return (
     <div className="motvation-container">
       <Row>
         <Col sm={9}>
-          <h3 className="title">Some Content</h3>
+          <h3 className="title">Become a Member.</h3>
           <p className="paragraph1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac
-            blandit nibh, quis sollicitudin metus. Vivamus sed aliquam nisl, in
-            commodo neque. Praesent laoreet nisi id augue fringilla aliquet vel
-            et justo. Nunc pharetra magna lobortis nibh imperdiet eleifend.
-            Vivamus sed auctor purus, id egestas augue. Nullam tempus justo
-            lacus, et viverra risus malesuada in. Suspendisse molestie erat
-            magna, congue elementum mi ullamcorper ac. Sed semper volutpat quam,
-            eget pellentesque lorem molestie quis. Fusce eget augue ac eros
-            lacinia semper. Donec non euismod felis, sed sollicitudin lectus.
-            Sed facilisis vulputate enim sit amet viverra.
+            It only takes a minute inside our studio to understand it’s not a
+            competition — it’s a community. Together, we’re working toward a
+            better version of ourselves to live a longer, more vibrant life.
+          </p>
+          <br></br>
+          <br></br>
+          <br></br>
+
+          <h3 className="title">
+            Love It or Your Money Back. <br />
+            Try Our 30-Day Risk Free Guarantee
+          </h3>
+          <p className="paragraph1">
+            We know you will love your LTUC-Arena experience. In fact, just take
+            12 classes during your first 30 days and if you don’t feel like
+            you’re living a more vibrant, happier, healthier life, take back all
+            your money and walk away. The first class may be taken at no charge.
           </p>
         </Col>
         <Col sm={3}>
