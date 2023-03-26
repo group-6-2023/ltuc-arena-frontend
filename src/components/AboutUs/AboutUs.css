@@ -1,17 +1,18 @@
 .aboutUs-parent {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    padding: 60px;
-    box-shadow: 20px 20px 30px #250303;
-    margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  padding: 5%;
+  box-shadow: 0px -3px 8px 0px #006494;
 }
 
-.paragraph {
-    padding: 0px 50px;
+.paragraph2 {
+  padding: 0px 5%;
+  color: #051923;
 }
 
 .aboutUs-parent h3 {
-    color:#250303;
+  color: #006494;
+  padding-bottom: 2%;
 }

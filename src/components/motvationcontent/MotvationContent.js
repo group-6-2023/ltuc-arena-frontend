@@ -9,11 +9,11 @@ import Col from "react-bootstrap/Col";
 
 export default function MotvationContent() {
   return (
-    <Container className="motvation-container">
+    <div className="motvation-container">
       <Row>
         <Col sm={9}>
-          <h3>some content</h3>
-          <p>
+          <h3 className="title">some content</h3>
+          <p className="paragraph1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac
             blandit nibh, quis sollicitudin metus. Vivamus sed aliquam nisl, in
             commodo neque. Praesent laoreet nisi id augue fringilla aliquet vel
@@ -52,6 +52,6 @@ export default function MotvationContent() {
           </Carousel>
         </Col>
       </Row>
-    </Container>
+    </div>
   );
 }
