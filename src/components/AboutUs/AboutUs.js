@@ -1,6 +1,7 @@
 import React from "react";
 import "./AboutUs.css";
 
+
 export default function AboutUs() {
   return (
     <div className="aboutUs-parent ">
@@ -13,6 +14,9 @@ export default function AboutUs() {
         sweat is our sport. And we're a team of individuals who know that to go
         further, we go together..{" "}
       </p>
+
+    
+
     </div>
   );
 }

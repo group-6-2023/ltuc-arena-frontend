@@ -4,15 +4,21 @@
   align-content: center;
 
   padding: 5%;
-  box-shadow: 0px -3px 8px 0px #006494;
-}
-
-.paragraph2 {
-  padding: 0px 5%;
-  color: #051923;
+  box-shadow: 0px -3px 8px 0px #C8E6F5;
 }
 
 .aboutUs-parent h3 {
-  color: #006494;
-  padding-bottom: 2%;
+  color: #417faf;
+  /* padding-bottom: 2%; */
+  text-align: center;
+
 }
+
+.paragraph2 {
+  /* padding: 0px 5%; */
+  color: #5CA0D3;
+  text-align: center;
+}
+
+
+
