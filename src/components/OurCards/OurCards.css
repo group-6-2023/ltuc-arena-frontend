@@ -1,0 +1,184 @@
+.container1 {
+    height: auto;
+    width: auto;
+    max-height: 800px;
+    max-width: 1280px;
+    min-height: 600px;
+    min-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .container2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 7%;
+  }
+  
+  
+  
+  .border {
+    height: 369px;
+    width: 290px;
+    background: transparent;
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+  }
+  
+  .card {
+    height: 379px;
+    width: 300px;
+    background: #C8E6F5;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 70px 63px -60px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .nameH {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #C8E6F5;
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  .fa {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .icons {
+    position: absolute;
+    fill: #C8E6F5;
+    color: #C8E6F5;
+    height: 130px;
+    top: 226px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  
+  
+  .card0 {
+    background: URL("../../assets/ourPics/Esmail.jpg")
+      center center no-repeat;
+    background-size: 298px;
+  }
+  .card0:hover {
+    background: URL("../../assets/ourPics/Esmail.jpg")
+      left center no-repeat;
+    background-size: 320px;
+  }
+  .card0:hover .nameH {
+    opacity: 1;
+  }
+  .card0:hover .fa {
+    opacity: 1;
+  }
+  
+  .card2 {
+    background: URL("../../assets/ourPics/Amjad.jpg")
+      center center no-repeat;
+    background-size: 470px;
+  }
+  .card2:hover {
+    background: URL("../../assets/ourPics/Amjad.jpg")
+      left center no-repeat;
+    background-size:  450px;
+  }
+  .card2:hover .nameH {
+    opacity: 1;
+  }
+  .card2:hover .fa {
+    opacity: 1;
+  }
+  
+  .card3 {
+    background: URL("../../assets/ourPics/Salah.jpeg")
+      center center no-repeat;
+    background-size: 420px;
+  }
+  .card3:hover {
+    background: URL("../../assets/ourPics/Salah.jpeg")
+      left center no-repeat;
+    background-size: 420px;
+  }
+  .card3:hover .nameH {
+    opacity: 1;
+  }
+  .card3:hover .fa {
+    opacity: 1;
+  }
+  
+  
+  
+  .card4 {
+    background: URL("../../assets/ourPics/Yazan.jpg")
+      center center no-repeat;
+    background-size: 300px;
+    margin-left: 25%;
+  }
+  .card4:hover {
+    background: URL("../../assets/ourPics/Yazan.jpg")
+      left center no-repeat;
+    background-size: 350px;
+  }
+  .card4:hover .nameH {
+    opacity: 1;
+  }
+  .card4:hover .fa {
+    opacity: 1;
+  }
+  
+  .card5 {
+    background: URL("../../assets/ourPics/Anas.jpeg")
+      center center no-repeat;
+    background-size: 440px;
+    margin-right: 25%;
+  
+  }
+  .card5:hover {
+    background: URL("../../assets/ourPics/Anas.jpeg")
+      left center no-repeat;
+    background-size: 420px;
+  }
+  .card5:hover .nameH {
+    opacity: 1;
+  }
+  .card5:hover .fa {
+    opacity: 1;
+  }
+  
+  
+  .linkA{
+    color: #C8E6F5;
+  }
+  
+  
+  .linkA:hover{
+    color: #C8E6F5
+  }
+
+  .team{
+    text-align: center;
+    color:var(--bigBlue);
+    margin-bottom: -8%;
+    /* margin-top: 5%; */
+    padding: 5%;
+  }
+
+  .ourCards{
+    box-shadow: 0px -3px 8px 0px #C8E6F5;
+  }

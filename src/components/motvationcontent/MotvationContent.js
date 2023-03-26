@@ -3,16 +3,16 @@ import img1 from "../../assets/small img/img1.jpg";
 import img2 from "../../assets/small img/img2.jpeg";
 import img3 from "../../assets/small img/img3.jpg";
 import "./motvationcontant.css";
-import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+
 
 export default function MotvationContent() {
   return (
     <div className="motvation-container">
       <Row>
         <Col sm={9}>
-          <h3 className="title">some content</h3>
+          <h3 className="title">Some Content</h3>
           <p className="paragraph1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac
             blandit nibh, quis sollicitudin metus. Vivamus sed aliquam nisl, in
