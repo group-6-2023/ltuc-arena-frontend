@@ -2,7 +2,7 @@ import "./OurCards.css";
 
 function OurCards() {
   return (
-    <div className="ourCards">
+    <div className="ourCards" id="OurTeam">
       <h3 className="team">Our Team:</h3>
 
       <div className="container1">

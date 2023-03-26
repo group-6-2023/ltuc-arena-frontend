@@ -1,25 +1,24 @@
 .big-ramy {
-    margin-top: 11px;
+  box-shadow: 0px -3px 8px 0px #c8e6f5;
+  width: 100%;
 
-    box-shadow: 0px -3px 8px 0px #c8e6f5;
-    width: 100%;
-
-    padding: 5%;
+  padding: 5%;
 }
 
 .title {
-    color: #417faf;
-    padding-bottom: 2%;
+  color: #417faf;
+  padding-bottom: 2%;
+  padding-left: 5%;
 }
 
 .paragraph1 {
-    padding: 0px 5%;
-    color: #5ca0d3;
-    font-size: 24px;
+  padding: 0px 5%;
+  color: #5ca0d3;
+  font-size: 24px;
 }
 
 .imgsize {
-    height: 25rem;
-    width: 10rem;
-    padding: 40px;
+  height: 25rem;
+  width: 10rem;
+  padding: 40px;
 }

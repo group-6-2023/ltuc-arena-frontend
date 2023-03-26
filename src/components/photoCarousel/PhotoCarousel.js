@@ -6,7 +6,7 @@ import "./photocarousel.css";
 
 export default function PhotoCarousel() {
   return (
-    <div>
+    <div className="contanier" id="top">
       <Carousel>
         <Carousel.Item interval={4000}>
           <img
