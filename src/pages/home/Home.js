@@ -4,9 +4,10 @@ import CardsContanier from "../../components/cardsContanier/CardsContanier";
 import SearchExercises from "../../components/searchExercises/SearchExercises";
 import axios from "axios";
 
-export default function Home() {
+export default function Home({ userList }) {
   const [exercises, setExercises] = useState([]);
   const [bodyPart, setBodyPart] = useState("all");
+
   const { user } = useAuth0();
 
   const addUser = async () => {
@@ -19,7 +20,10 @@ export default function Home() {
     axios.post(url, body);
   };
   useEffect(() => {
-    // addUser();
+    const userExists = userList.find((e) => e.email === user.email);
+    if (!userExists) {
+      addUser();
+    }
   }, []);
 
   return (

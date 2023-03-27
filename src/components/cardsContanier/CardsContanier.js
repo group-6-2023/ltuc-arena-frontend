@@ -23,10 +23,9 @@ export default function CardsContanier({ setExercises, exercises, bodyPart }) {
     window.scrollTo({ top: 1800, behavior: "smooth" });
   };
 
-  
   const getAllExercise = async () => {
     let exercisesData = [];
-    if ((bodyPart = "all")) {
+    if (bodyPart === "all") {
       let url = `${process.env.REACT_APP_SERVER_URL}/allExercises`;
       const { data } = await axios(url);
       exercisesData = data;
@@ -53,7 +52,6 @@ export default function CardsContanier({ setExercises, exercises, bodyPart }) {
                 setClickedCardData={setClickedCardData}
                 setModalShow={setModalShow}
               />
-
 
               <ModalToAdd
                 clickedCardData={clickedCardData}
