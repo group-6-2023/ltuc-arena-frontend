@@ -43,7 +43,7 @@ export default function SearchExercises({
   }, []);
 
   return (
-    <div className="search">
+    <div className="search" id="cardcontanier">
       <SearchBar
         search={search}
         setSearch={setSearch}
