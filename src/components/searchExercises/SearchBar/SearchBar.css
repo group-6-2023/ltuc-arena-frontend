@@ -1,0 +1,13 @@
+.searchBar {
+  align-self: center;
+  width: 50%;
+}
+.searchbutton {
+  color: var(--bigBlue);
+  /* background-color: var(--bigBlue); */
+}
+.searchbutton:hover {
+  background-color: var(--bigBlue);
+  color: var(--page);
+  box-shadow: 0px 0px 3px 4px var(--bigBlue);
+}
