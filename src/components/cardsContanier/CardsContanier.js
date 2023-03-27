@@ -23,6 +23,7 @@ export default function CardsContanier({ setExercises, exercises, bodyPart }) {
     window.scrollTo({ top: 1800, behavior: "smooth" });
   };
 
+  
   const getAllExercise = async () => {
     let exercisesData = [];
     if ((bodyPart = "all")) {
@@ -52,6 +53,8 @@ export default function CardsContanier({ setExercises, exercises, bodyPart }) {
                 setClickedCardData={setClickedCardData}
                 setModalShow={setModalShow}
               />
+
+
               <ModalToAdd
                 clickedCardData={clickedCardData}
                 modalShow={modalShow}
