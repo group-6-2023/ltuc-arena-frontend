@@ -1,0 +1,48 @@
+.div-arrow {
+  cursor: pointer;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+  padding: 1%;
+}
+.right-arrow,
+.left-arrow {
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+
+.right-arrow:hover,
+.left-arrow:hover {
+  transform: scale(1.5, 1.5);
+}
+.react-horizontal-scrolling-menu--scroll-container {
+  display: flex;
+  height: max-content;
+  overflow-y: hidden;
+  position: relative;
+  width: 100%;
+  gap: 30px;
+  padding-left: 5%;
+}
+.category {
+  padding: 15% 0;
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+  /* background-color: var(--page); */
+}
+.category:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.singleCat {
+  background-color: #c9c6c5;
+  border-top: 0;
+  border-radius: 0;
+  border-left: 0;
+  border-right: 0;
+  box-shadow: 0 0 0 0;
+}
