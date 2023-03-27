@@ -11,9 +11,20 @@ export default function CategoryCard({ item, setBodyPart, bodyPart }) {
         }}
         className="singleCat"
       >
-        <Card.Img variant="top" src={img} />
+        <Card.Img
+          variant="top"
+          src={img}
+          style={{ width: "100px", height: "100px" }}
+        />
         <Card.Body>
-          <Card.Title>{item}</Card.Title>
+          <Card.Title
+            style={{
+              fontSize: "30px",
+              color: bodyPart === item ? "#417faf" : "",
+            }}
+          >
+            {item}
+          </Card.Title>
         </Card.Body>
       </Card>
     </div>

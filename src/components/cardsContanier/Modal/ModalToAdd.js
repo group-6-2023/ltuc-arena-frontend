@@ -3,21 +3,23 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import axios from "axios";
 import Form from "react-bootstrap/Form";
+import { useAuth0 } from "@auth0/auth0-react";
 
 export default function ModalToAdd(props) {
   const [weeksDays, setWeeksDay] = useState("");
+  const { user } = useAuth0();
   const addexercise = async () => {
     try {
       const article = {
         exerciseName: props.clickedCardData.name,
         gifUrl: props.clickedCardData.gifUrl,
         bodyPart: props.clickedCardData.bodyPart,
-        targetMuscle: props.clickedCardData.targetMuscle,
+        targetMuscle: props.clickedCardData.target,
         equipment: props.clickedCardData.equipment,
         weeksDay: weeksDays,
       };
       const dataWait = await axios.post(
-        `${process.env.REACT_APP_SERVER_URL}/addExerciseForOneUser/:email`,
+        `${process.env.REACT_APP_SERVER_URL}/addExerciseForOneUser/${user.email}`,
         article
       );
     } catch (error) {
@@ -42,7 +44,7 @@ export default function ModalToAdd(props) {
           <div>
             <h3> {props.clickedCardData.name}</h3>
             <p> {props.clickedCardData.bodyPart}</p>
-            <p> {props.clickedCardData.targetMuscle}</p>
+            <p> {props.clickedCardData.target}</p>
             <p> {props.clickedCardData.equipment}</p>
           </div>
         </Modal.Body>

@@ -11,85 +11,82 @@ import image8 from "../../assets/saftey Tips/image8.jpg";
 import image9 from "../../assets/saftey Tips/image9.jpg";
 import image10 from "../../assets/saftey Tips/image10.jpg";
 
-
-
 export default function SafteyTips() {
-    return (
-        <div className="contanier" id="top">
-            <h1 id="STH">Here is some SafteyTips for you !</h1>
-            <Carousel>
-                <Carousel.Item interval={4000}>
-                    <img
-                        className="d-block w-100 image-size"
-                        src={image1}
-                        alt="First slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={4000}>
-                    <img
-                        className="d-block w-100 image-size"
-                        src={image2}
-                        alt="Second slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={4000}>
-                    <img
-                        className="d-block w-100 image-size"
-                        src={image3}
-                        alt="Third slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={4000}>
-                    <img
-                        className="d-block w-100 image-size"
-                        src={image4}
-                        alt="Fourth slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={4000}>
-                    <img
-                        className="d-block w-100 image-size"
-                        src={image5}
-                        alt="Fifth slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={4000}>
-                    <img
-                        className="d-block w-100 image-size"
-                        src={image6}
-                        alt="Sixth slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={4000}>
-                    <img
-                        className="d-block w-100 image-size"
-                        src={image7}
-                        alt="Seventh slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={4000}>
-                    <img
-                        className="d-block w-100 image-size"
-                        src={image8}
-                        alt="eighth slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={4000}>
-                    <img
-                        className="d-block w-100 image-size"
-                        src={image9}
-                        alt="Ninth slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item interval={4000}>
-                    <img
-                        className="d-block w-100 image-size"
-                        src={image10}
-                        alt="Tenth slide"
-                    />
-                </Carousel.Item>
-
-            </Carousel>
-        </div>
-    );
+  return (
+    <div className="contanier" id="top">
+      <h2 id="STH">Here is some SafteyTips for you !</h2>
+      <Carousel>
+        <Carousel.Item interval={4000}>
+          <img
+            className="d-block w-100 image-size"
+            src={image1}
+            alt="First slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item interval={4000}>
+          <img
+            className="d-block w-100 image-size"
+            src={image2}
+            alt="Second slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item interval={4000}>
+          <img
+            className="d-block w-100 image-size"
+            src={image3}
+            alt="Third slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item interval={4000}>
+          <img
+            className="d-block w-100 image-size"
+            src={image4}
+            alt="Fourth slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item interval={4000}>
+          <img
+            className="d-block w-100 image-size"
+            src={image5}
+            alt="Fifth slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item interval={4000}>
+          <img
+            className="d-block w-100 image-size"
+            src={image6}
+            alt="Sixth slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item interval={4000}>
+          <img
+            className="d-block w-100 image-size"
+            src={image7}
+            alt="Seventh slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item interval={4000}>
+          <img
+            className="d-block w-100 image-size"
+            src={image8}
+            alt="eighth slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item interval={4000}>
+          <img
+            className="d-block w-100 image-size"
+            src={image9}
+            alt="Ninth slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item interval={4000}>
+          <img
+            className="d-block w-100 image-size"
+            src={image10}
+            alt="Tenth slide"
+          />
+        </Carousel.Item>
+      </Carousel>
+    </div>
+  );
 }

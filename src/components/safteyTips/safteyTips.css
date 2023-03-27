@@ -1,16 +1,12 @@
-h1 {
-    color: #250303;
-    padding: 35px;
-  }
-  
-  .contanier {
-    padding-top: 20px;
+#STH {
+  color: var(--bigBlue);
+  text-align: center;
 }
-  .image-size {
-      height: 35rem;
-      padding: 50px;
-  }
 
-  
-
- 
+.contanier {
+  padding-top: 20px;
+}
+.image-size {
+  height: 35rem;
+  padding: 50px;
+}
