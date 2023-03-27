@@ -19,7 +19,8 @@ export default function SearchExercises({
     setBodyParts(["all", ...data]);
   };
 
-  const handleSearch = async () => {
+  const handleSearch = async (e) => {
+    e.preventDefault();
     if (search) {
       const { data } = await axios(
         `${process.env.REACT_APP_SERVER_URL}/allExercises`

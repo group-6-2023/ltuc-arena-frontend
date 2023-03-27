@@ -41,3 +41,16 @@
   background-color: var(--page);
   color: var(--red);
 }
+
+.profileImg {
+  border-radius: 50%;
+  width: 50px;
+  /* border: 1px solid var(--page); */
+  box-shadow: 0px 0px 4px 2px var(--page);
+}
+.profileName {
+  color: var(--page);
+  padding: 0 1%;
+  text-align: center;
+  margin-top: 1%;
+}

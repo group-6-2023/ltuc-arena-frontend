@@ -9,7 +9,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { Link } from "react-router-dom";
 
 function NavBar() {
-  const { loginWithRedirect, isAuthenticated, logout } = useAuth0();
+  const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
 
   const loginHandler = () => {
     if (!isAuthenticated) {
@@ -39,14 +39,18 @@ function NavBar() {
             </Nav.Link>
           </Nav>
         ) : (
-          <Nav className="me-auto navLinkContainer">
-            <Link to="/" className="navLink">
-              Home
-            </Link>
-            <Link to="/exercise-list" className="navLink">
-              Exercise List
-            </Link>
-          </Nav>
+          <>
+            <Nav className="me-auto navLinkContainer">
+              <Link to="/" className="navLink">
+                Home
+              </Link>
+              <Link to="/exercise-list" className="navLink">
+                Exercise List
+              </Link>
+            </Nav>
+            <img src={user.picture} className="profileImg"></img>
+            <h5 className="profileName">{user.name}</h5>
+          </>
         )}
 
         <Button
