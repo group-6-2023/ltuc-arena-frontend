@@ -120,11 +120,11 @@ function OurCards() {
               Full-Stack Devlooper
             </p>
             <div className="icons">
-              <a className="linkA" href="/">
+              <a className="linkA" href="https://www.linkedin.com/in/anas-al-salaq-059430207">
                 {" "}
                 <i className="fa fa-linkedin" aria-hidden="true"></i>
               </a>
-              <a className="linkA" href="/">
+              <a className="linkA" href="https://instagram.com/anasalsalaq?igshid=ZDdkNTZiNTM=">
                 {" "}
                 <i className="fa fa-instagram" aria-hidden="true"></i>
               </a>

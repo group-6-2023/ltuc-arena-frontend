@@ -3,6 +3,8 @@ import { useAuth0 } from "@auth0/auth0-react";
 import CardsContanier from "../../components/cardsContanier/CardsContanier";
 import SearchExercises from "../../components/searchExercises/SearchExercises";
 import axios from "axios";
+import SafteyTips from "../../components/safteyTips/SafteyTips";
+
 
 export default function Home() {
   const [exercises, setExercises] = useState([]);
@@ -18,6 +20,7 @@ export default function Home() {
     };
     axios.post(url, body);
   };
+
   useEffect(() => {
     // addUser();
   }, []);
@@ -29,6 +32,10 @@ export default function Home() {
       <br />
       <br />
 
+      <SafteyTips />
+      <br />
+      <br />
+      
       <SearchExercises
         setExercises={setExercises}
         bodyPart={bodyPart}
