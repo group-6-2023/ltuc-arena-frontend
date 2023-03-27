@@ -4,6 +4,7 @@ import CardsContanier from "../../components/cardsContanier/CardsContanier";
 import SearchExercises from "../../components/searchExercises/SearchExercises";
 import axios from "axios";
 import SafteyTips from "../../components/safteyTips/SafteyTips";
+import Homephoto from "../../components/Homephoto/Homephoto";
 
 
 export default function Home({ userList }) {
@@ -35,11 +36,13 @@ export default function Home({ userList }) {
       <br />
       <br />
       <br />
-
+      <Homephoto />
+      <br />
+      <br />
       <SafteyTips />
       <br />
       <br />
-      
+
       <SearchExercises
         setExercises={setExercises}
         bodyPart={bodyPart}
