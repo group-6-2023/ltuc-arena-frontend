@@ -3,6 +3,8 @@ import { useAuth0 } from "@auth0/auth0-react";
 import CardsContanier from "../../components/cardsContanier/CardsContanier";
 import SearchExercises from "../../components/searchExercises/SearchExercises";
 import axios from "axios";
+import SafteyTips from "../../components/safteyTips/SafteyTips";
+
 
 export default function Home({ userList }) {
   const [exercises, setExercises] = useState([]);
@@ -19,6 +21,7 @@ export default function Home({ userList }) {
     };
     axios.post(url, body);
   };
+
   useEffect(() => {
     const userExists = userList.find((e) => e.email === user.email);
     if (!userExists) {
@@ -33,6 +36,10 @@ export default function Home({ userList }) {
       <br />
       <br />
 
+      <SafteyTips />
+      <br />
+      <br />
+      
       <SearchExercises
         setExercises={setExercises}
         bodyPart={bodyPart}
