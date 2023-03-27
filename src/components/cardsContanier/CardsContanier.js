@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import Pagination from "@mui/material/Pagination";
 import ExerciseCard from "./Card/ExerciseCard";
 import ModalToAdd from "./Modal/ModalToAdd";
+import Row from "react-bootstrap/Row";
+import Container from "react-bootstrap/Container";
 import "./cardscontanier.css";
 
 export default function CardsContanier({ setExercises, exercises, bodyPart }) {
@@ -43,25 +45,29 @@ export default function CardsContanier({ setExercises, exercises, bodyPart }) {
   return (
     <>
       <div>
-        {currentExercises.map((exercise) => {
-          return (
-            <>
-              <ExerciseCard
-                exercise={exercise}
-                key={exercise.id}
-                setClickedCardData={setClickedCardData}
-                setModalShow={setModalShow}
-              />
+        <Container>
+          <Row xs={1} sm={2} md={3} xl={3}>
+            {currentExercises.map((exercise) => {
+              return (
+                <>
+                  <ExerciseCard
+                    exercise={exercise}
+                    key={exercise.id}
+                    setClickedCardData={setClickedCardData}
+                    setModalShow={setModalShow}
+                  />
 
-              <ModalToAdd
-                clickedCardData={clickedCardData}
-                modalShow={modalShow}
-                onHide={() => setModalShow(false)}
-              />
-            </>
-          );
-        })}
-
+                  <ModalToAdd
+                    clickedCardData={clickedCardData}
+                    modalShow={modalShow}
+                    onHide={() => setModalShow(false)}
+                  />
+                </>
+              );
+            })}
+          </Row>
+        </Container>
+        <br />
         <div className="pagination">
           {exercises.length > 9 && (
             <Pagination
@@ -75,6 +81,7 @@ export default function CardsContanier({ setExercises, exercises, bodyPart }) {
             />
           )}
         </div>
+        <br />
       </div>
     </>
   );

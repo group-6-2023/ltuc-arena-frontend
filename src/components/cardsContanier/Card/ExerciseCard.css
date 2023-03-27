@@ -1,114 +1,108 @@
-
 .exCard {
-    position: relative;
-    width: 450px;
-    height: 300px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    transition: 0.5s;
-    background-color: var(--backGroung);
+  position: relative;
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  background-color: var(--backGroung);
+  margin: 20px 0;
 }
 
 .exCard .circle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .exCard .circle::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--neon);
-    clip-path: circle(100px at center);
-    transition: 0.5s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--neon);
+  clip-path: circle(100px at center);
+  transition: 0.5s;
 }
 
 .exCard:hover .circle::before {
-    background: var(--bigBlue);
-    clip-path: circle(400px at center);
+  background: var(--bigBlue);
+  clip-path: circle(400px at center);
 }
 
 .exCard img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 60%;
-    width: 40%;
-    pointer-events: none;
-    transition: 0.5s;
-    border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60%;
+  width: 45%;
+  pointer-events: none;
+  transition: 0.5s;
+  border-radius: 50%;
 }
 
 .exCard:hover img {
-    left: 78%;
-    height: 100%;
-    width: 45%;
-    border-radius: 9%;
-
+  left: 78%;
+  height: 100%;
+  width: 50%;
+  border-radius: 9%;
 }
 
-
 .exCard .cardContent {
-    position: relative;
-    width: 50%;
-    left: 20%;
-    padding: 20px 20px 20px 40px;
-    transition: 0.5s;
-    opacity: 0;
-    visibility: hidden;
+  position: relative;
+  width: 50%;
+  left: 20%;
+  padding: 20px 20px 20px 40px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .exCard:hover .cardContent {
-    left: 0;
-    opacity: 1;
-    visibility: visible;
+  left: 0;
+  opacity: 1;
+  visibility: visible;
 }
 
 .exName {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    line-height: 1em;
-    margin-bottom: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  line-height: 1em;
+  margin-bottom: 5px;
 }
 
 .exBody {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1em;
-    margin-bottom: 10px;
-    font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1em;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .exCard .cardContent p {
-    color: #fff;
+  color: #fff;
 }
 
 .exCard .cardContent a {
-    position: relative;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 10px;
-    background: #fff;
-    color: var(--bigBlue);
-    margin-top: 10px;
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 700;
-    transition: 0.5s;
-    cursor: pointer;
+  position: relative;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--bigBlue);
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.5s;
+  cursor: pointer;
 }
-
-
-
-

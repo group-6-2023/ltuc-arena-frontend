@@ -11,24 +11,31 @@ export default function HeroBanner() {
         ml: { sm: "50px" },
       }}
       position="relative "
-      p="20px"
+      p="0px"
     >
       <Typography
         fontWeight={700}
         sx={{ fontSize: "44px", color: "#417faf" }}
         mb="23px"
-        mt="30px"
+        ml="100px"
       >
         Sweat, Smile <br />
         and Repeat
       </Typography>
-      <Typography fontSize="22px" mb={4} sx={{ color: "#5ca0d3" }}>
+      <Typography fontSize="22px" mb={4} ml="100px" sx={{ color: "#5ca0d3" }}>
         Check Out The Most Effective Exercises
       </Typography>
       <Button
         variant="outline-secondary"
         type="submit"
         className="searchbutton"
+        style={{
+          marginLeft: "100px",
+          width: "200px",
+          height: "60px",
+          fontSize: "24px",
+        }}
+        href="#cardcontanier"
       >
         Explore Exercises
       </Button>
