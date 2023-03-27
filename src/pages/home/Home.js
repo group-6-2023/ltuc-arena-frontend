@@ -5,7 +5,7 @@ import SearchExercises from "../../components/searchExercises/SearchExercises";
 import axios from "axios";
 import SafteyTips from "../../components/safteyTips/SafteyTips";
 import Homephoto from "../../components/Homephoto/Homephoto";
-
+import HeroBanner from "../../components/heroBanner/HeroBanner";
 
 export default function Home({ userList }) {
   const [exercises, setExercises] = useState([]);
@@ -34,9 +34,8 @@ export default function Home({ userList }) {
     <div>
       <br />
       <br />
-      <br />
-      <br />
-      <Homephoto />
+      {/* <Homephoto /> */}
+      <HeroBanner />
       <br />
       <br />
       <SafteyTips />
