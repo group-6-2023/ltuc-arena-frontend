@@ -10,14 +10,23 @@
   width: 100%;
   background-color: #130d2e;
   padding: 5%;
+  color: rgb(214, 221, 226);
 }
-.title {
-  color: #417faf;
+.title1 {
+  color: #dee7ee;
   padding-bottom: 2%;
   padding-left: 5%;
+  
 }
-.paragraph1 {
+.paragraph12 {
   padding: 0px 5%;
-  color: #5ca0d3;
+  color: #c1cbd3;
   font-size: 24px;
+}
+
+.photo{
+height: 60px;
+width: 50px;
+padding-bottom: 10px;
+
 }
