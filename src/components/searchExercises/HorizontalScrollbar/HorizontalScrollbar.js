@@ -25,7 +25,14 @@ const RightArrow = () => {
   );
 };
 
-const HorizontalScrollbar = ({ data, setBodyPart, bodyPart }) => (
+const HorizontalScrollbar = ({
+  data,
+  setBodyPart,
+  bodyPart,
+  day,
+  setDay,
+  isList,
+}) => (
   <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
     {data.map((item) => (
       <CategoryCard
@@ -33,6 +40,9 @@ const HorizontalScrollbar = ({ data, setBodyPart, bodyPart }) => (
         setBodyPart={setBodyPart}
         bodyPart={bodyPart}
         key={item}
+        day={day}
+        setDay={setDay}
+        isList={isList}
       />
     ))}
   </ScrollMenu>

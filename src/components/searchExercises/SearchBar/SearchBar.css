@@ -3,11 +3,11 @@
   width: 50%;
 }
 .searchbutton {
-  color: var(--bigBlue);
+  color: rgb(177, 8, 8);
   /* background-color: var(--bigBlue); */
 }
 .searchbutton:hover {
-  background-color: var(--bigBlue);
+  background-color: rgb(177, 8, 8);
   color: var(--page);
-  box-shadow: 0px 0px 3px 4px var(--bigBlue);
+  box-shadow: 0px 0px 3px 4px rgb(177, 8, 8);
 }

@@ -8,7 +8,7 @@
 .navBrand {
   color: #f2eee0;
   margin-right: 0%;
-  font-size: x-large;
+  font-size: 40px;
 }
 
 .navLink {
@@ -19,7 +19,7 @@
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out;
   color: #f2eee0;
-  font-size: larger;
+  font-size: x-large;
   padding: 10px;
 }
 
@@ -54,4 +54,5 @@
   padding: 0 1%;
   text-align: center;
   margin-top: 1%;
+  font-size: x-large;
 }
