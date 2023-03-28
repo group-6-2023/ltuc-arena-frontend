@@ -91,7 +91,13 @@ export default function ExerciseList() {
         ) : (
           <Row xs={1} sm={2} md={3} style={{ minHeight: "50vh" }}>
             {arrToMap.map((exercise) => {
-              return <ExerciseCard isList={true} exercise={exercise} />;
+              return (
+                <ExerciseCard
+                  isList={true}
+                  exercise={exercise}
+                  setfavArr={setfavArr}
+                />
+              );
             })}
           </Row>
         )}

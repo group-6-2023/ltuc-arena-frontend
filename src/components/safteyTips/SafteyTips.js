@@ -16,70 +16,70 @@ export default function SafteyTips() {
     <div className="contanier" id="top">
       <h2 id="STH">Here is some SafteyTips for you !</h2>
       <Carousel>
-        <Carousel.Item interval={4000}>
+        <Carousel.Item interval={3000}>
           <img
             className="d-block w-100 image-size"
             src={image1}
             alt="First slide"
           />
         </Carousel.Item>
-        <Carousel.Item interval={4000}>
+        <Carousel.Item interval={3000}>
           <img
             className="d-block w-100 image-size"
             src={image2}
             alt="Second slide"
           />
         </Carousel.Item>
-        <Carousel.Item interval={4000}>
+        <Carousel.Item interval={3000}>
           <img
             className="d-block w-100 image-size"
             src={image3}
             alt="Third slide"
           />
         </Carousel.Item>
-        <Carousel.Item interval={4000}>
+        <Carousel.Item interval={3000}>
           <img
             className="d-block w-100 image-size"
             src={image4}
             alt="Fourth slide"
           />
         </Carousel.Item>
-        <Carousel.Item interval={4000}>
+        <Carousel.Item interval={3000}>
           <img
             className="d-block w-100 image-size"
             src={image5}
             alt="Fifth slide"
           />
         </Carousel.Item>
-        <Carousel.Item interval={4000}>
+        <Carousel.Item interval={3000}>
           <img
             className="d-block w-100 image-size"
             src={image6}
             alt="Sixth slide"
           />
         </Carousel.Item>
-        <Carousel.Item interval={4000}>
+        <Carousel.Item interval={3000}>
           <img
             className="d-block w-100 image-size"
             src={image7}
             alt="Seventh slide"
           />
         </Carousel.Item>
-        <Carousel.Item interval={4000}>
+        <Carousel.Item interval={3000}>
           <img
             className="d-block w-100 image-size"
             src={image8}
             alt="eighth slide"
           />
         </Carousel.Item>
-        <Carousel.Item interval={4000}>
+        <Carousel.Item interval={3000}>
           <img
             className="d-block w-100 image-size"
             src={image9}
             alt="Ninth slide"
           />
         </Carousel.Item>
-        <Carousel.Item interval={4000}>
+        <Carousel.Item interval={3000}>
           <img
             className="d-block w-100 image-size"
             src={image10}

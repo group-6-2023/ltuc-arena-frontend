@@ -16,7 +16,6 @@
   color: #dee7ee;
   padding-bottom: 2%;
   padding-left: 5%;
-  
 }
 .paragraph12 {
   padding: 0px 5%;
@@ -24,9 +23,15 @@
   font-size: 24px;
 }
 
-.photo{
-height: 60px;
-width: 50px;
-padding-bottom: 10px;
+.photo {
+  height: 60px;
+  width: 50px;
+  padding-bottom: 10px;
+}
 
+.p-font {
+  font-size: large;
+}
+.red-word {
+  color: rgb(255, 10, 10);
 }
