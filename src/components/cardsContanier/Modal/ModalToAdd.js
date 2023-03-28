@@ -4,6 +4,7 @@ import Modal from "react-bootstrap/Modal";
 import axios from "axios";
 import Form from "react-bootstrap/Form";
 import { useAuth0 } from "@auth0/auth0-react";
+import "./ModalToAdd.css";
 
 export default function ModalToAdd(props) {
   const [weeksDays, setWeeksDay] = useState("");
@@ -33,19 +34,25 @@ export default function ModalToAdd(props) {
 
   return (
     <>
-      <Modal show={props.modalShow} onHide={props.onHide}>
+      <Modal show={props.modalShow} onHide={props.onHide} backdrop="true">
         <Modal.Header closeButton>
           <Modal.Title>{props.clickedCardData.name}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <div>
+          <div className="img">
             <img src={props.clickedCardData.gifUrl} />
           </div>
-          <div>
-            <h3> {props.clickedCardData.name}</h3>
-            <p> {props.clickedCardData.bodyPart}</p>
-            <p> {props.clickedCardData.target}</p>
-            <p> {props.clickedCardData.equipment}</p>
+          <div className="details">
+            <p>
+              Exercises keep you strong. {props.clickedCardData.name} is one of the best exercises to
+              target your {props.clickedCardData.target}. It will help you improve your mood and gain
+              energy.
+            </p>
+            <p> Exercise Name: {props.clickedCardData.name}</p>
+            <p> Body Part: {props.clickedCardData.bodyPart}</p>
+            <p> Target Muscle: {props.clickedCardData.target}</p>
+            <p> Used Equipment: {props.clickedCardData.equipment}</p>
+            
           </div>
         </Modal.Body>
         <Modal.Footer>
@@ -55,17 +62,24 @@ export default function ModalToAdd(props) {
           <Button variant="primary" onClick={addexercise}>
             add to
           </Button>
-          <Form.Group className="mb-3">
-            <Form.Label>WeeksDay</Form.Label>
-            <Form.Control
-              as="textarea"
-              rows={3}
+          <div className="dropdown-container">
+            <Form.Select
+              className="dropdown-select"
               value={weeksDays}
               onChange={(ev) => {
                 setWeeksDay(ev.target.value);
               }}
-            />
-          </Form.Group>
+            >
+              <option value="">Select a day</option>
+              <option value="Saturday">Saturday</option>
+              <option value="Sunday">Sunday</option>
+              <option value="Monday">Monday</option>
+              <option value="Tuesday">Tuesday</option>
+              <option value="Wednesday">Wednesday</option>
+              <option value="Thursday">Thursday</option>
+              <option value="Friday">Friday</option>
+            </Form.Select>
+          </div>
         </Modal.Footer>
       </Modal>
     </>
