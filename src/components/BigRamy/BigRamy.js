@@ -1,29 +1,58 @@
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Ramyimg from "../../assets/small img/BIgRamy.jpg";
+//import Ramyimg from "../../assets/small img/BIgRamy.jpg";
 import "./BigRamy.css";
+import heart from '../../assets/Main PAge/heart.png'
+import apple from '../../assets/Main PAge/apple.png'
+import flex from '../../assets/Main PAge/flex.png'
 
 export default function BigRamy() {
   return (
-    <div className="big-ramy">
+    <div className="HEALTH-NUTRITION">
       <Row>
-        <Col sm={9}>
-          <h3 className="title">Big Ramy</h3>
-          <p className="paragraph1">
-            Mamdouh Mohammed Hassan Elssbiay (Arabic: ممدوح محمد حسن السبيعي;
-            born 16 September 1984), also known as Big Ramy, is an Egyptian IFBB
-            professional bodybuilder. He is a two time Mr. Olympia champion,
-            winning in 2020 and 2021. Elssbiay earned his pro card by winning
-            the overall title at the 2012 Amateur Olympia in Kuwait City. In
-            2010, he joined Oxygen Gym in Kuwait. By 2011, he weighed 200 lbs,
-            and when he stepped on the 2012 Amateur Olympia Kuwait stage, he
-            weighed in at 286 lbs and was declared the champion. In 2013,
-            Elssbiay made his IFBB Pro-debut at the New York Pro, which he won.
-            In 2020 and 2021, he won the Mr. Olympia contest.
-          </p>
-        </Col>
-        <Col sm={3}>
-          <img className="d-block w-100 imgsize" src={Ramyimg}></img>
+        <Col >
+          <div>
+            <h1 className="title">HEALTH & NUTRITION</h1>
+            <p className="paragraph11">
+              Everyday food choices are guided by a number of considerations—emotions, habits, fast-paced lifestyles, traditions, social influences, religion,
+              and pleasure. Let me help you feel confident in your diet choices while still enjoying the foods that you love with one-on-one nutrition
+              counseling sessions. Whether your goal is to lose weight, lower cholesterol, or optimize your health, having me as your private nutrition coach
+              provides the support you need to stay on track and keep yourself motivated.
+            </p>
+          </div>
+          <br></br>
+          <br></br>
+
+          <div className='photo10'>
+
+            <div>
+              < img className='photo1' src={heart} />
+
+              <h5>PREMIUM HEALTH</h5>
+            </div>
+
+            <div>
+              < img className='photo1' src={apple} />
+
+              <h5>QAULITY NUTRITION</h5>
+            </div>
+
+            <div>
+              < img className='photo1' src={flex} />
+
+              <h5>MEAL PLANS</h5>
+            </div>
+
+          </div>
+          <br></br>
+          <br></br>
+
+          <div>
+            <p className="paragraph11">
+              As part of all of my training programs, you’ll work one-on-one with me as your nutrition coach to develop a plan that meets you where
+              you’re starting, no matter what your goal or your experience level is.
+            </p>
+          </div>
         </Col>
       </Row>
     </div>
