@@ -15,14 +15,14 @@ export default function HeroBanner() {
     >
       <Typography
         fontWeight={700}
-        sx={{ fontSize: "44px", color: "#417faf" }}
+        sx={{ fontSize: "44px", color: "#2c7bfe" }}
         mb="23px"
         ml="100px"
       >
         Sweat, Smile <br />
         and Repeat
       </Typography>
-      <Typography fontSize="22px" mb={4} ml="100px" sx={{ color: "#5ca0d3" }}>
+      <Typography fontSize="22px" mb={4} ml="100px" sx={{ color: "#2c7bfe" }}>
         Check Out The Most Effective Exercises
       </Typography>
       <Button
@@ -41,7 +41,7 @@ export default function HeroBanner() {
       </Button>
       <Typography
         fontWeight={600}
-        color="#5ca0d3"
+        color="#2c7bfe"
         sx={{
           opacity: 0.2,
         }}

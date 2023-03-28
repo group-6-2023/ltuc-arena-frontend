@@ -1,71 +1,72 @@
- .modal-dialog {
-  max-width: 800px;
+.modal-dialog {
+  max-width: 1500px;
 }
 
 .modal-header {
-    background-color: var(--bigBlue);
-    border-bottom: 1px solid #dee2e6;
-    padding: 1rem;
-    font-weight: bold;
-  }
-  
-  .modal-title {
-    margin: 0;
-    font-size: 1.5rem;
-  }  
-  
-  .modal-body {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    background-image:-webkit-repeating-linear-gradient(#250303,#417faf,transparent);
-  }
-  
-  .modal-body img {
-    width: 70%;
-    height: auto;
-  }
+  background-color: var(--bigBlue);
+  border-bottom: 1px solid #dee2e6;
+  padding: 1rem;
+  font-weight: bold;
+}
 
-  .modal-body h3 {
-    margin-top: 0;
-  }
-  
-  .details {
-    color: var(--red);
-    font-weight: bolder;
-    flex-grow: 1;
-    margin-left: 1rem;
-    background-color: #fcfcfc;
-  }
-  
-  .modal-body p {
-    margin: 0.5rem 0;
-  }
-  
-  .modal-footer {
-    background-color: #f8f9fa;
-    border-top: 1px solid #dee2e6;
-    padding: 1rem;
-  }
-  
-  .modal-footer .btn-secondary {
-    margin-right: 1rem;
-  }
-  
-  .modal-footer .btn-primary {
-    margin-right: 1rem;
-  }
-  
-  .form-group {
-    margin-top: 1rem;
-  }
-  
-  .form-label {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
+.modal-title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 30px;
+  padding: 10%;
+
+  /* background-image: -webkit-repeating-linear-gradient(
+    #250303,
+    #417faf,
+    transparent
+  ); */
+}
+
+.modal-body h3 {
+  margin-top: 0;
+}
+
+.details {
+  color: var(--red);
+  font-weight: bolder;
+  flex-grow: 1;
+  margin-left: 1rem;
+  background-color: #fcfcfc;
+}
+
+.modal-body p {
+  margin: 0.5rem 0;
+}
+
+.modal-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  padding: 1rem;
+}
+
+.modal-footer .btn-secondary {
+  margin-right: 1rem;
+}
+
+.modal-footer .btn-primary {
+  margin-right: 1rem;
+}
+
+.form-group {
+  margin-top: 1rem;
+}
+
+.form-label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
 
 .dropdown-container {
   flex-grow: 1;
@@ -88,5 +89,7 @@
   justify-content: space-between;
 }
 
-
-  
+.modal-backdrop {
+  --bs-backdrop-opacity: 0.1;
+  /* display: none !important; */
+}
