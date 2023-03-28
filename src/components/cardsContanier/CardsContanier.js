@@ -46,7 +46,7 @@ export default function CardsContanier({ setExercises, exercises, bodyPart }) {
     <>
       <div>
         <Container>
-          <Row xs={1} sm={2} md={3} xl={3}>
+          <Row w xl={3}>
             {currentExercises.map((exercise) => {
               return (
                 <>
@@ -71,8 +71,9 @@ export default function CardsContanier({ setExercises, exercises, bodyPart }) {
         <div className="pagination">
           {exercises.length > 9 && (
             <Pagination
-              color="standard"
+              variant="outlined"
               shape="rounded"
+              color="secondary"
               defaultPage={1}
               count={Math.ceil(exercises.length / exercisesPerPage)}
               page={currentPage}

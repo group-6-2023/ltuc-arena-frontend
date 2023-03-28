@@ -38,7 +38,9 @@ export default function ModalToAdd(props) {
     <>
       <Modal show={props.modalShow} onHide={props.onHide} centered size="lg">
         <Modal.Header closeButton>
-          <Modal.Title>{props.clickedCardData.name}</Modal.Title>
+          <Modal.Title>
+            Exercise Name : {props.clickedCardData.name}
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body style={{ height: "600px" }}>
           <div className="img">
@@ -48,7 +50,7 @@ export default function ModalToAdd(props) {
             />
           </div>
           <div className="details">
-            <h3> Exercise Name: {props.clickedCardData.name}</h3>
+            <h3> {props.clickedCardData.name}</h3>
             <p>
               Exercises keep you strong. {props.clickedCardData.name} is one of
               the best exercises to target your {props.clickedCardData.target}.
@@ -57,6 +59,24 @@ export default function ModalToAdd(props) {
             <p> Body Part: {props.clickedCardData.bodyPart}</p>
             <p> Target Muscle: {props.clickedCardData.target}</p>
             <p> Used Equipment: {props.clickedCardData.equipment}</p>
+            <div className="dropdown-container">
+              <Form.Select
+                className="dropdown-select"
+                value={weeksDays}
+                onChange={(ev) => {
+                  setWeeksDay(ev.target.value);
+                }}
+              >
+                <option value="">Select a day</option>
+                <option value="saturday">Saturday</option>
+                <option value="sunday">Sunday</option>
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+              </Form.Select>
+            </div>
           </div>
         </Modal.Body>
         <Modal.Footer>
@@ -66,24 +86,6 @@ export default function ModalToAdd(props) {
           <Button variant="primary" disabled={!weeksDays} onClick={addexercise}>
             add to
           </Button>
-          <div className="dropdown-container">
-            <Form.Select
-              className="dropdown-select"
-              value={weeksDays}
-              onChange={(ev) => {
-                setWeeksDay(ev.target.value);
-              }}
-            >
-              <option value="">Select a day</option>
-              <option value="Saturday">Saturday</option>
-              <option value="Sunday">Sunday</option>
-              <option value="Monday">Monday</option>
-              <option value="Tuesday">Tuesday</option>
-              <option value="Wednesday">Wednesday</option>
-              <option value="Thursday">Thursday</option>
-              <option value="Friday">Friday</option>
-            </Form.Select>
-          </div>
         </Modal.Footer>
       </Modal>
     </>

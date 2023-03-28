@@ -8,12 +8,22 @@ import legs from "../../../assets/body parts/legs.png";
 import neck from "../../../assets/body parts/neck.png";
 import shoulders from "../../../assets/body parts/shoulders.png";
 import waist from "../../../assets/body parts/waist.png";
-import lower from "../../../assets/body parts/lower arm.png";
 import upper from "../../../assets/body parts/upper arm.png";
+import lower from "../../../assets/body parts/lower arm.png";
+import lowerleg from "../../../assets/body parts/lower leg.png";
+import upperleg from "../../../assets/body parts/upper leg.png";
+import calender from "../../../assets/calendar.png";
 
-export default function CategoryCard({ item, setBodyPart, bodyPart }) {
+export default function CategoryCard({
+  item,
+  setBodyPart,
+  bodyPart,
+  day,
+  setDay,
+  isList,
+}) {
   const imgGen = () => {
-    let img;
+    let img = calender;
     if (item === "back") {
       img = back;
     } else if (item === "cardio") {
@@ -34,7 +44,11 @@ export default function CategoryCard({ item, setBodyPart, bodyPart }) {
       img = upper;
     } else if (item === "lower arms") {
       img = lower;
-    } else {
+    } else if (item === "lower legs") {
+      img = lowerleg;
+    } else if (item === "upper legs") {
+      img = upperleg;
+    } else if (item === "all") {
       img = allimg;
     }
     return img;
@@ -42,7 +56,7 @@ export default function CategoryCard({ item, setBodyPart, bodyPart }) {
 
   return (
     <Card
-      onClick={() => setBodyPart(item)}
+      onClick={() => (isList ? setDay(item) : setBodyPart(item))}
       className="category"
       style={{
         width: "16rem",
@@ -53,17 +67,28 @@ export default function CategoryCard({ item, setBodyPart, bodyPart }) {
         src={imgGen()}
         style={{ width: "100px", height: "100px" }}
       />
-
       <Card.Body>
-        <Card.Title
-          style={{
-            fontSize: "30px",
-            color: bodyPart === item ? "#2c7bfe" : "",
-          }}
-          className="title-card"
-        >
-          <h3>{item}</h3>
-        </Card.Title>
+        {isList ? (
+          <Card.Title
+            style={{
+              fontSize: "30px",
+              color: day === item ? "rgb(177, 8, 8)" : "",
+            }}
+            className="title-card"
+          >
+            <h3>{item}</h3>
+          </Card.Title>
+        ) : (
+          <Card.Title
+            style={{
+              fontSize: "30px",
+              color: bodyPart === item ? "rgb(177, 8, 8)" : "",
+            }}
+            className="title-card"
+          >
+            <h3>{item}</h3>
+          </Card.Title>
+        )}
       </Card.Body>
     </Card>
   );

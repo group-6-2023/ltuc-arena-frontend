@@ -33,7 +33,7 @@
 }
 
 .exCard:hover .circle::before {
-  background: #2c7bfe;
+  background: rgb(177, 8, 8);
   clip-path: circle(400px at center);
 }
 
@@ -98,7 +98,7 @@
   padding: 10px 20px;
   /* border-radius: 10px; */
   background: #fff;
-  color: #2c7bfe;
+  color: rgb(177, 8, 8);
   margin-top: 10px;
   display: inline-block;
   text-decoration: none;

@@ -49,12 +49,13 @@ export default function SearchExercises({
         setSearch={setSearch}
         handleSearch={handleSearch}
       ></SearchBar>
-
-      <HorizontalScrollbar
-        data={bodyParts}
-        bodyPart={bodyPart}
-        setBodyPart={setBodyPart}
-      />
+      <div style={{ width: "80%", margin: "0 auto" }}>
+        <HorizontalScrollbar
+          data={bodyParts}
+          bodyPart={bodyPart}
+          setBodyPart={setBodyPart}
+        />
+      </div>
     </div>
   );
 }
