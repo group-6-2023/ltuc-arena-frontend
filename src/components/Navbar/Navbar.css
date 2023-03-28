@@ -2,11 +2,11 @@
   background-color: #130d2e;
   position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
 }
 
 .navBrand {
-  color: #f2eee0;
+  color: white;
   margin-right: 0%;
   font-size: 40px;
 }
@@ -18,7 +18,7 @@
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out;
-  color: #f2eee0;
+  color: white;
   font-size: x-large;
   padding: 10px;
 }
@@ -35,10 +35,10 @@
   padding-left: 5%;
 }
 .login {
-  color: var(--page);
+  color: white;
 }
 .login:hover {
-  background-color: var(--page);
+  background-color: white;
   color: var(--red);
 }
 

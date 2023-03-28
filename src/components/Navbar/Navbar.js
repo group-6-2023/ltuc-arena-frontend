@@ -7,6 +7,7 @@ import logo2 from "../../assets/muscle - 2.png";
 import Button from "react-bootstrap/Button";
 import { useAuth0 } from "@auth0/auth0-react";
 import { Link } from "react-router-dom";
+import { FaUnlockAlt } from "react-icons/fa";
 
 function NavBar() {
   const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
@@ -32,10 +33,10 @@ function NavBar() {
               Main
             </Nav.Link>
             <Nav.Link href="#AboutUs" className="navLink">
-              About Us
+              About-Us
             </Nav.Link>
             <Nav.Link href="#OurTeam" className="navLink">
-              Our Team
+              Our-Team
             </Nav.Link>
           </Nav>
         ) : (
@@ -45,7 +46,7 @@ function NavBar() {
                 Home
               </Link>
               <Link to="/exercise-list" className="navLink">
-                Exercise List
+                Exercise-List
               </Link>
             </Nav>
             <h5 className="profileName">{user.name}</h5>
@@ -59,6 +60,7 @@ function NavBar() {
           onClick={loginHandler}
         >
           {!isAuthenticated ? "LogIn" : "LogOut"}
+          <FaUnlockAlt style={{ marginLeft: "5px", marginBottom: "6px" }} />
         </Button>
       </Container>
     </Navbar>

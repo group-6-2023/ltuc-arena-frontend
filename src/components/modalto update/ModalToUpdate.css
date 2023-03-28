@@ -1,0 +1,19 @@
+.btn-close {
+  background-color: white;
+}
+.dropdown-update {
+  width: 100%;
+}
+.dropdown-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.edit-modal {
+  display: flex;
+  justify-content: space-between;
+}
+.bold-modal {
+  font-size: large;
+  font-weight: bold;
+}
