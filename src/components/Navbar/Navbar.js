@@ -48,8 +48,8 @@ function NavBar() {
                 Exercise List
               </Link>
             </Nav>
-            <img src={user.picture} className="profileImg"></img>
             <h5 className="profileName">{user.name}</h5>
+            <img src={user.picture} className="profileImg"></img>
           </>
         )}
 

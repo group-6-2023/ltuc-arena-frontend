@@ -23,6 +23,8 @@ export default function ModalToAdd(props) {
         `${process.env.REACT_APP_SERVER_URL}/addExerciseForOneUser/${user.email}`,
         article
       );
+      props.onHide();
+      setWeeksDay("");
     } catch (error) {
       console.log(error);
     }
@@ -34,32 +36,34 @@ export default function ModalToAdd(props) {
 
   return (
     <>
-      <Modal show={props.modalShow} onHide={props.onHide} backdrop="true">
+      <Modal show={props.modalShow} onHide={props.onHide} centered size="lg">
         <Modal.Header closeButton>
           <Modal.Title>{props.clickedCardData.name}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body style={{ height: "600px" }}>
           <div className="img">
-            <img src={props.clickedCardData.gifUrl} />
+            <img
+              src={props.clickedCardData.gifUrl}
+              style={{ height: "505px", width: "450px" }}
+            />
           </div>
           <div className="details">
+            <h3> Exercise Name: {props.clickedCardData.name}</h3>
             <p>
-              Exercises keep you strong. {props.clickedCardData.name} is one of the best exercises to
-              target your {props.clickedCardData.target}. It will help you improve your mood and gain
-              energy.
+              Exercises keep you strong. {props.clickedCardData.name} is one of
+              the best exercises to target your {props.clickedCardData.target}.
+              It will help you improve your mood and gain energy.
             </p>
-            <p> Exercise Name: {props.clickedCardData.name}</p>
             <p> Body Part: {props.clickedCardData.bodyPart}</p>
             <p> Target Muscle: {props.clickedCardData.target}</p>
             <p> Used Equipment: {props.clickedCardData.equipment}</p>
-            
           </div>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={addexercise}>
+          <Button variant="primary" disabled={!weeksDays} onClick={addexercise}>
             add to
           </Button>
           <div className="dropdown-container">

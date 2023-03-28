@@ -2,7 +2,7 @@
   --red: #250303;
   --page: #f2eee0;
   --neon: #c8e6f5;
-  --bigBlue: #417faf;
+  --bigBlue: #2c7bfe;
   --smallBlue: #5ca0d3;
   --backGroung: #c9c6c5;
 }
@@ -11,7 +11,7 @@ html {
 }
 
 .app {
-  background-color: #c9c6c5;
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
   font-family: "Edu NSW ACT Foundation", Impact;
