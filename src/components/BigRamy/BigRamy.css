@@ -1,25 +1,26 @@
-.big-ramy {
-  box-shadow: 0px -3px 8px 0px #c8e6f5;
-  width: 100%;
-  height: 100vh;
-  padding: 5%;
-  background-color: white;
+.photo1 {
+  height: 60px;
+  width: 50px;
+  padding-bottom: 10px;
 }
 
 .title {
-  color: #417faf;
+  color: #130d2e;
   padding-bottom: 2%;
   padding-left: 5%;
 }
 
-.paragraph1 {
+.paragraph11 {
   padding: 0px 5%;
-  color: #5ca0d3;
+  color: #130d2e;
   font-size: 24px;
 }
 
-.imgsize {
-  height: 25rem;
-  width: 10rem;
-  padding: 40px;
+.photo10 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.HEALTH-NUTRITION{
+  height: 100vh;
 }
