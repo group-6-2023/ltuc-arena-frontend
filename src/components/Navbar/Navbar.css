@@ -1,5 +1,5 @@
 .nav {
-  background-color: #250303;
+  background-color: #417faf;
   position: fixed;
   width: 100%;
   z-index: 2;
@@ -46,7 +46,7 @@
   border-radius: 50%;
   width: 45px;
   /* border: 1px solid var(--page); */
-  box-shadow: 0px 0px 4px 2px var(--page);
+  box-shadow: 0px 0px 4px 2px var(--smallBlue);
   margin: 0 1%;
 }
 .profileName {

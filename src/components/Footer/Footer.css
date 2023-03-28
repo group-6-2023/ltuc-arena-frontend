@@ -1,123 +1,124 @@
 .footer {
-    background-color: #250303;
-    /* height: 30px; */
+  background-color: #417faf;
+  /* height: 30px; */
 }
 
 .footer h6 {
-    text-align: center;
-    color: #F2EEE0;
-    /* margin-top: 20px; */
-    padding-top: 0.5%;
+  text-align: center;
+  color: #f2eee0;
+  /* margin-top: 20px; */
+  padding-top: 0.5%;
 }
 
 .hover {
-    --b: 0.1em;
-    --c: #F2EEE0;
+  --b: 0.1em;
+  --c: #f2eee0;
 
-    color: #F2EEE0;
-    padding-block: var(--b);
-    background:
-        linear-gradient(var(--c) 50%, #250303 0) 0% calc(100% - var(--_p, 0%))/100% 200%,
-        linear-gradient(var(--c) 0 0) 0% var(--_p, 0%)/var(--_p, 0%) var(--b) no-repeat;
-    -webkit-background-clip: text, padding-box;
-    background-clip: text, padding-box;
-    transition: .3s var(--_s, 0s) linear,
-        background-size .3s calc(.3s - var(--_s, 0s));
+  color: #f2eee0;
+  padding-block: var(--b);
+  background: linear-gradient(var(--c) 50%, #250303 0) 0%
+      calc(100% - var(--_p, 0%)) / 100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p, 0%) / var(--_p, 0%) var(--b)
+      no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.3s var(--_s, 0s) linear,
+    background-size 0.3s calc(0.3s - var(--_s, 0s));
 }
 
 .hover:hover {
-    --_p: 100%;
-    --_s: .3s;
+  --_p: 100%;
+  --_s: 0.3s;
 }
 
 :root {
-    --link-size: 35px;
-    --trans-props: all 0.3s ease;
+  --link-size: 35px;
+  --trans-props: all 0.3s ease;
 }
 
 .wrapper {
-    height: 7vh;
-    text-align: center;
-    padding-bottom: 3.7%;
+  height: 7vh;
+  text-align: center;
+  padding-bottom: 3.7%;
 }
 
 .wrapper,
 .social-icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: row wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 .social-icon {
-    display: flex;
+  display: flex;
 
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 
+  width: var(--link-size);
+  height: var(--link-size);
+  margin: 8px;
 
-    width: var(--link-size);
-    height: var(--link-size);
-    margin: 8px;
+  background-color: #f2eee0;
+  border-radius: 50%;
+  box-shadow: 0px 1px 3px #f2eee0;
 
-    background-color: #F2EEE0;
-    border-radius: 50%;
-    box-shadow: 0px 1px 3px #F2EEE0;
+  text-decoration: none;
 
-    text-decoration: none;
-
-    transition: var(--trans-props);
+  transition: var(--trans-props);
 }
 
 .social-icon i {
-    margin: auto;
+  margin: auto;
 
-    font-size: 24px;
-    color: #250303;
-    z-index: 1;
+  font-size: 24px;
+  color: #250303;
+  z-index: 1;
 }
 
 .social-icon:after {
-    content: "";
+  content: "";
 
-    width: var(--link-size);
-    height: var(--link-size);
+  width: var(--link-size);
+  height: var(--link-size);
 
-    position: absolute;
+  position: absolute;
 
-    transform: translate(0, var(--link-size));
+  transform: translate(0, var(--link-size));
 
-    border-radius: 50%;
-    transition: var(--trans-props);
+  border-radius: 50%;
+  transition: var(--trans-props);
 }
 
 .social-icon.mail:after {
-    background-color: #fbaf16;
+  background-color: #fbaf16;
 }
 
 .social-icon.whatsapp:after {
-    background-color: #25D366;
+  background-color: #25d366;
 }
 
 .social-icon.instagram:after {
-    background-image: linear-gradient(to bottom left,
-            #4f5bd5,
-            #962fbf,
-            #ca2771,
-            #fa7e1e,
-            #feda75);
+  background-image: linear-gradient(
+    to bottom left,
+    #4f5bd5,
+    #962fbf,
+    #ca2771,
+    #fa7e1e,
+    #feda75
+  );
 }
 
 .social-icon:hover {
-    transform: translateY(-4px);
-    box-shadow: 0px 4px 12px #250303;
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 12px #250303;
 }
 
 .social-icon:hover i {
-
-    color: #F2EEE0;
+  color: #f2eee0;
 }
 
 .social-icon:hover:after {
-    transform: translate(0) scale(1.2);
+  transform: translate(0) scale(1.2);
 }
