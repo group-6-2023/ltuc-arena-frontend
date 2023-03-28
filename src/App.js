@@ -28,7 +28,7 @@ function App() {
       {isLoading ? (
         <Spinner
           animation="border"
-          variant="info"
+          variant="primary"
           style={{ height: "100vh" }}
         />
       ) : (
