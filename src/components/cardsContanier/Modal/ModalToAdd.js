@@ -83,7 +83,7 @@ export default function ModalToAdd(props) {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" disabled={!weeksDays} onClick={addexercise}>
+          <Button variant="primary" disabled={!weeksDays} onClick={addexercise} className="addTo">
             add to
           </Button>
         </Modal.Footer>

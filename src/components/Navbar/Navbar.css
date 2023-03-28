@@ -24,12 +24,12 @@
 }
 
 .logo {
-  height: 2.5%;
-  width: 2.5%;
+  height: 3%;
+  width: 3%;
 }
 
 .navLink:hover {
-  color: #c8e6f5;
+  color: red;
 }
 .navLinkContainer {
   padding-left: 5%;
