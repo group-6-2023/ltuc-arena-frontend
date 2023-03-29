@@ -39,6 +39,17 @@ export default function Home({ userList }) {
       <br />
       <br />
       <SafteyTips />
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <br />
       <br />
 

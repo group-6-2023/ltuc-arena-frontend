@@ -1,13 +1,11 @@
 import { useAuth0 } from "@auth0/auth0-react";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Tab from "react-bootstrap/Tab";
-import Tabs from "react-bootstrap/Tabs";
+
 import ExerciseCard from "../../components/cardsContanier/Card/ExerciseCard";
 import HorizontalScrollbar from "../../components/searchExercises/HorizontalScrollbar/HorizontalScrollbar";
 import CardsContanier from "../../components/cardsContanier/CardsContanier";
 import { Container, Row } from "react-bootstrap";
-import { margin } from "@mui/system";
 
 export default function ExerciseList() {
   const { user } = useAuth0();

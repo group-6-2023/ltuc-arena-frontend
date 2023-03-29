@@ -32,14 +32,14 @@ function NavBar() {
             <Nav.Link href="#top" className="navLink">
               Main
             </Nav.Link>
+            <Nav.Link href="#explore" className="navLink">
+              Explore
+            </Nav.Link>
             <Nav.Link href="#AboutUs" className="navLink">
               About-Us
             </Nav.Link>
             <Nav.Link href="#OurTeam" className="navLink">
               Our-Team
-            </Nav.Link>
-            <Nav.Link href="#explore" className="navLink">
-              Explore
             </Nav.Link>
           </Nav>
         ) : (
@@ -53,7 +53,7 @@ function NavBar() {
               </Link>
             </Nav>
             <h5 className="profileName">{user.name}</h5>
-            <img src={user.picture} className="profileImg"></img>
+            <img src={user.picture} alt={user.picture} className="profileImg" />
           </>
         )}
 

@@ -13,8 +13,9 @@ import image10 from "../../assets/saftey Tips/image10.jpg";
 
 export default function SafteyTips() {
   return (
-    <div className="contanier" id="top">
-      <h2 id="STH">Here is some SafteyTips for you !</h2>
+    <div className="contanier5" id="top">
+      <div className="overlay2"></div>
+      <h1 id="STH">Here is some SafteyTips for you !</h1>
       <Carousel>
         <Carousel.Item interval={3000}>
           <img
