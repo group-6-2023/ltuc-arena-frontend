@@ -1,0 +1,14 @@
+.AskModal {
+  background-color: #130d2e;
+  color: white;
+}
+
+.AskContent {
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
+}
+.Askmodal-contanier {
+  width: 80%;
+  margin-left: 10%;
+}
