@@ -1,13 +1,24 @@
 #STH {
   color: #130d2e;
-  text-align: center;
+  padding-left: 7%;
+  padding-bottom: 1%;
 }
 
-.contanier {
-  padding-top: 10px;
+.contanier5 {
+  width: 100vw;
+  max-height: 75vh;
 }
 .image-size {
-  height: 40rem;
+  object-fit: cover;
+  max-height: 85vh;
+}
 
-  padding: 40px 140px;
+.overlay2 {
+  position: absolute;
+  z-index: 1;
+  top: 1044px;
+  width: 100vw;
+  height: 85vh;
+  background-color: #130d2e;
+  opacity: 0.5;
 }
