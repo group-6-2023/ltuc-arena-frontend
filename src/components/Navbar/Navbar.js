@@ -53,7 +53,7 @@ function NavBar() {
               </Link>
             </Nav>
             <h5 className="profileName">{user.name}</h5>
-            <img src={user.picture} className="profileImg"></img>
+            <img src={user.picture} alt={user.picture} className="profileImg" />
           </>
         )}
 

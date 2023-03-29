@@ -18,7 +18,7 @@ export default function MainPage() {
       <MotvationContent />
 
       <BigRamy />
-      <div id="explore" style={{ marginTop: "-50px" }}>
+      <div id="explore" style={{ marginTop: "-20px" }}>
         <SearchExercises
           setExercises={setExercises}
           bodyPart={bodyPart}
