@@ -1,5 +1,5 @@
 import Card from "react-bootstrap/Card";
-import allimg from "../../../assets/muscle.png";
+import allimg from "../../../assets/muscle-3.png";
 import arms from "../../../assets/body parts/arms.png";
 import back from "../../../assets/body parts/back.png";
 import cardio from "../../../assets/body parts/cardio.png";

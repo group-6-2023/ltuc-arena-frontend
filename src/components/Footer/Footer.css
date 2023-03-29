@@ -5,18 +5,18 @@
 
 .footer h6 {
   text-align: center;
-  color: #f2eee0;
+  color: #ffffff;
   /* margin-top: 20px; */
   padding-top: 0.5%;
 }
 
 .hover {
   --b: 0.1em;
-  --c: #f2eee0;
+  --c: #ffffff;
 
-  color: #f2eee0;
+  color: #ffffff;
   padding-block: var(--b);
-  background: linear-gradient(var(--c) 50%, #250303 0) 0%
+  background: linear-gradient(var(--c) 50%, #130d2e 0) 0%
       calc(100% - var(--_p, 0%)) / 100% 200%,
     linear-gradient(var(--c) 0 0) 0% var(--_p, 0%) / var(--_p, 0%) var(--b)
       no-repeat;
@@ -60,9 +60,9 @@
   height: var(--link-size);
   margin: 8px;
 
-  background-color: #f2eee0;
+  background-color: #ffffff;
   border-radius: 50%;
-  box-shadow: 0px 1px 3px #f2eee0;
+  box-shadow: 0px 1px 3px #ffffff;
 
   text-decoration: none;
 
@@ -73,7 +73,7 @@
   margin: auto;
 
   font-size: 24px;
-  color: #250303;
+  color: #130d2e;
   z-index: 1;
 }
 
@@ -112,11 +112,11 @@
 
 .social-icon:hover {
   transform: translateY(-4px);
-  box-shadow: 0px 4px 12px #250303;
+  box-shadow: 0px 4px 12px #130d2e;
 }
 
 .social-icon:hover i {
-  color: #f2eee0;
+  color: #ffffff;
 }
 
 .social-icon:hover:after {

@@ -4,8 +4,8 @@
 }
 
 .modal-header {
-  background-color: rgb(177, 8, 8);
-  border-bottom: 1px solid #130d2e;
+  background-color: #130d2e;
+  border-bottom: 1px solid #ffffff;
   padding: 1rem;
   font-weight: bold;
 }
@@ -13,6 +13,7 @@
 .modal-title {
   margin: 0;
   font-size: 1.5rem;
+  color: #ffffff;
 }
 
 .modal-body {
@@ -36,7 +37,7 @@
 }
 
 .details {
-  color: var(--red);
+  color: #130d2e;
   font-weight: bolder;
   display: flex;
   flex-direction: column;
@@ -86,3 +87,13 @@
   --bs-backdrop-opacity: 0.1;
   /* display: none !important; */
 }
+
+
+.addTo{
+  background-color: #130d2e;
+}
+
+.addTo:hover{
+  background-color: #1b1241;
+}
+
