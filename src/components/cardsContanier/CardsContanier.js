@@ -7,7 +7,12 @@ import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import "./cardscontanier.css";
 
-export default function CardsContanier({ setExercises, exercises, bodyPart }) {
+export default function CardsContanier({
+  setExercises,
+  exercises,
+  bodyPart,
+  isMain,
+}) {
   const [clickedCardData, setClickedCardData] = useState({});
   const [modalShow, setModalShow] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
@@ -55,6 +60,7 @@ export default function CardsContanier({ setExercises, exercises, bodyPart }) {
                     key={exercise.id}
                     setClickedCardData={setClickedCardData}
                     setModalShow={setModalShow}
+                    isMain={isMain}
                   />
 
                   <ModalToAdd

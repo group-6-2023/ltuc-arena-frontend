@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./ExerciseCard.css";
 import Col from "react-bootstrap/Col";
 import ModalToUpdate from "../../modalto update/ModalToUpdate";
+import AskLogin from "../../asklogin/AskLogin";
 
 export default function ExerciseCard({
   setClickedCardData,
@@ -9,9 +10,20 @@ export default function ExerciseCard({
   exercise,
   isList,
   setfavArr,
+  isMain,
 }) {
   const [clicked, setClicked] = useState({});
   const [show, setShow] = useState(false);
+  const [showAsk, setShowAsk] = useState(false);
+
+  const addbutton = () => {
+    if (isMain) {
+      setShowAsk(true);
+    } else {
+      setClickedCardData(exercise);
+      setModalShow(true);
+    }
+  };
   return (
     <>
       <Col>
@@ -42,14 +54,7 @@ export default function ExerciseCard({
                   </a>
                 </div>
               ) : (
-                <a
-                  onClick={() => {
-                    setClickedCardData(exercise);
-                    setModalShow(true);
-                  }}
-                >
-                  ADD
-                </a>
+                <a onClick={addbutton}>ADD</a>
               )}
             </div>
             <img
@@ -64,6 +69,12 @@ export default function ExerciseCard({
           show={show}
           onHide={() => {
             setShow(false);
+          }}
+        />
+        <AskLogin
+          show={showAsk}
+          onHide={() => {
+            setShowAsk(false);
           }}
         />
       </Col>
