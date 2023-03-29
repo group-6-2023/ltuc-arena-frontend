@@ -1,12 +1,30 @@
-.image-carousl {
+.container-vid {
+  width: 100%;
   height: 100vh;
+  padding-top: 50px;
 }
-.contanier {
-  height: 100vh;
+video {
+  object-fit: cover;
+  max-height: 95vh;
+  min-width: 100vw;
+  overflow-y: hidden;
 }
-
-.superman {
+.overlay {
   position: absolute;
-  top: 200px;
-  left: 150px;
+  top: -1px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #130d2e;
+  opacity: 0.5;
+}
+/*  #130d2e */
+.content {
+  position: absolute;
+  top: 600px;
+  left: 50%;
+  color: rgb(255, 255, 255);
+  /* background-color: rgb(19, 13, 46, 0.2); */
+}
+.content h1 {
+  font-size: 5rem;
 }

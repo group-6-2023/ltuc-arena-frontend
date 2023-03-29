@@ -31,7 +31,7 @@ export default function ExerciseList() {
   const getExercise = async () => {
     const url = `${process.env.REACT_APP_SERVER_URL}/exerciseForOneUser/${user.email}`;
     const { data } = await axios(url);
-    setfavArr(data);
+    // setfavArr(data);
     const saturday = data.filter((e) => e.weeksday === "saturday");
     setsaturday(saturday);
     const sunday = data.filter((e) => e.weeksday === "sunday");
@@ -63,8 +63,6 @@ export default function ExerciseList() {
 
   useEffect(() => {
     getExercise();
-
-    console.log(favArr);
   }, [day, favArr]);
 
   return (
