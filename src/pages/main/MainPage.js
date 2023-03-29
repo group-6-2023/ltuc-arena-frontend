@@ -1,5 +1,5 @@
 import React from "react";
-import PhotoCarousel from "../../components/photoCarousel/PhotoCarousel";
+import PhotoCarousel from "../../components/MainVideo/Photocarousel";
 import MotvationContent from "../../components/motvationcontent/MotvationContent";
 import AboutUs from "../../components/AboutUs/AboutUs";
 import OurCards from "../../components/OurCards/OurCards";
