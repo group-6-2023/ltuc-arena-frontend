@@ -54,7 +54,8 @@ export default function MotvationContent() {
             </p>
           </div>
         </Col>
-
+      </Row>
+      <Row>
         <Col sm={6}>
           <div>
             <h3 className="title1">

@@ -38,6 +38,9 @@ function NavBar() {
             <Nav.Link href="#OurTeam" className="navLink">
               Our-Team
             </Nav.Link>
+            <Nav.Link href="#explore" className="navLink">
+              Explore
+            </Nav.Link>
           </Nav>
         ) : (
           <>
