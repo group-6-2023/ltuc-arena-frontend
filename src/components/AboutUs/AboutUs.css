@@ -3,13 +3,13 @@
   flex-direction: column;
   align-content: center;
   height: 100vh;
-  padding: 5%;
+  padding: 10% 5%;
   box-shadow: 0px -3px 8px 0px #c8e6f5;
   background-color: #130d2e;
 }
 
 .aboutUs-parent h3 {
-  color: #417faf;
+  color: white;
   padding-bottom: 2%;
   padding-left: 5%;
   /* text-align: center; */
@@ -17,6 +17,6 @@
 
 .paragraph2 {
   padding: 0px 5%;
-  color: #5ca0d3;
+  color: white;
   font-size: 24px;
 }

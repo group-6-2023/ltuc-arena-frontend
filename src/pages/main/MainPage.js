@@ -18,18 +18,19 @@ export default function MainPage() {
       <MotvationContent />
 
       <BigRamy />
-
-      <SearchExercises
-        setExercises={setExercises}
-        bodyPart={bodyPart}
-        setBodyPart={setBodyPart}
-      />
-      <CardsContanier
-        isMain={true}
-        setExercises={setExercises}
-        exercises={exercises}
-        bodyPart={bodyPart}
-      />
+      <div id="explore">
+        <SearchExercises
+          setExercises={setExercises}
+          bodyPart={bodyPart}
+          setBodyPart={setBodyPart}
+        />
+        <CardsContanier
+          isMain={true}
+          setExercises={setExercises}
+          exercises={exercises}
+          bodyPart={bodyPart}
+        />
+      </div>
 
       <AboutUs />
 

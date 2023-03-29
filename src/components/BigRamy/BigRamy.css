@@ -10,7 +10,6 @@
   color: #130d2e;
   font-size: 24px;
   margin-top: 50px;
-
 }
 
 .paragraph13 {
@@ -18,19 +17,12 @@
   color: #130d2e;
   font-size: 24px;
   margin-top: 50px;
-
 }
-
 
 .HEALTH-NUTRITION {
   height: 100vh;
+  padding-left: 2%;
 }
-
-
-
-
-
-
 
 .div0 {
   margin-top: 50px;
@@ -39,8 +31,6 @@
   display: flex;
   /* margin-left: 5%; */
 }
-
-
 
 .div1 {
   position: relative;
@@ -66,10 +56,6 @@
   box-sizing: border-box;
 }
 
-
-
-
-
 .div2 {
   margin-right: 29px;
   position: relative;
@@ -92,15 +78,12 @@
   box-sizing: border-box;
 }
 
-
-
-
 .div3 {
   position: relative;
   margin-right: 26px;
   padding-left: 5px;
   text-align: center;
-  text-decoration: none; 
+  text-decoration: none;
   max-width: 100%;
   display: inline-block;
 }
