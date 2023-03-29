@@ -1,4 +1,4 @@
-import "./photocarousel.css";
+import "./mainvideo.css";
 import video from "../../assets/main video/Main Video.mp4"
 
 const PhotoCarousel = () => {

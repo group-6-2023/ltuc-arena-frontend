@@ -1,5 +1,5 @@
 import React from "react";
-import PhotoCarousel from "../../components/MainVideo/Photocarousel";
+import MainVideo from "../../components/MainVideo/Mainvideo";
 import MotvationContent from "../../components/motvationcontent/MotvationContent";
 import AboutUs from "../../components/AboutUs/AboutUs";
 import OurCards from "../../components/OurCards/OurCards";
@@ -9,7 +9,7 @@ export default function MainPage() {
   return (
     <div>
 
-      <PhotoCarousel />
+      <MainVideo />
 
       <MotvationContent />
 
