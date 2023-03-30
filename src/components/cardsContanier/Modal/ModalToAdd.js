@@ -74,7 +74,6 @@ export default function ModalToAdd(props) {
                 <option value="tuesday">Tuesday</option>
                 <option value="wednesday">Wednesday</option>
                 <option value="thursday">Thursday</option>
-                <option value="friday">Friday</option>
               </Form.Select>
             </div>
           </div>
@@ -83,7 +82,12 @@ export default function ModalToAdd(props) {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" disabled={!weeksDays} onClick={addexercise} className="addTo">
+          <Button
+            variant="primary"
+            disabled={!weeksDays}
+            onClick={addexercise}
+            className="addTo"
+          >
             add to
           </Button>
         </Modal.Footer>
