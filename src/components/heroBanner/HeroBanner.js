@@ -33,7 +33,7 @@ export default function HeroBanner() {
           marginLeft: "100px",
           width: "200px",
           height: "60px",
-          fontSize: "24px",
+          fontSize: "20px",
         }}
         href="#cardcontanier"
       >
