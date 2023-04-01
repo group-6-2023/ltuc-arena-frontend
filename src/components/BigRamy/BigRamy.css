@@ -99,3 +99,11 @@
   color: #130d2e;
   box-sizing: border-box;
 }
+@media only screen and (max-width: 1500px) {
+ .paragraph11 {
+    font-size: 16px;
+  }
+  .paragraph13 {
+    font-size: 16px
+  }
+}
