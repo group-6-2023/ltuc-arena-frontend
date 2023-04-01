@@ -9,7 +9,7 @@ import { Button } from "bootstrap";
 export default function PhotoCarousel() {
   return (
     <div className="container-vid">
-      <video src={video} loop={true} autoPlay={true} muted></video>
+      <video src={video} loop={true} autoPlay={true} muted controls></video>
       <div className="overlay"></div>
       <div className="content">
         {/* <h1>
