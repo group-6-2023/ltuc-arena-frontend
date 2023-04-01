@@ -36,3 +36,9 @@
 .red-word {
   color: rgb(255, 10, 10);
 }
+
+@media only screen and (max-width: 1500px) {
+  .p-font {
+    font-size: 14px;
+  }
+}
